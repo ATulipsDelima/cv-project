@@ -1,0 +1,60 @@
+/* education display */
+
+/* holder */
+.education #school-info-holder{
+    padding: 10px;
+    margin: 1rem;
+    transition: 0.3s;
+}
+.education #school-info-holder:hover{
+    background-color:  #eee;
+}
+/* end holder */
+/* delete btn */
+.education #school-info-holder button{
+    background: none ;
+    color: #aaa;
+    border: none;
+    font-weight: 600;
+    float: right;
+    transition: 0.1s;
+    font-size: 16px;
+}
+.education #school-info-holder button:hover{
+    /* background-color:  #ff2400; */
+    color:  #ff2400;
+    transition: 0.1s;
+    
+}
+/* end delete btn */
+/* end education display */
+
+/* experiance display */
+/* holder */
+.experiance #history-info-holder{
+    padding: 10px;
+    margin: 1rem;
+    transition: 0.3s;
+}
+.experiance #history-info-holder:hover{
+    background-color:  #eee;
+}
+/* end holder */
+/* delete btn */
+.experiance #history-info-holder button{
+    background: none ;
+    color: #aaa;
+    border: none;
+    font-weight: 600;
+    float: right;
+    transition: 0.1s;
+    font-size: 16px;
+}
+.experiance #history-info-holder button:hover{
+    /* background-color:  #ff2400; */
+    color:  #ff2400;
+    transition: 0.1s;
+    
+}
+/* end delete btn */
+/* endexperiance display */

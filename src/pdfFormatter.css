@@ -1,0 +1,100 @@
+:root{
+    --main-color: rgb(20, 62, 114);
+}
+
+/* page layout */
+.pdf-view{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 40mm 270mm;
+}
+
+/* titles */
+#title2{
+    color: var(--main-color);
+    border-bottom: 1px solid #bbb;
+}
+/* end titles */
+/* end page layout */
+/* headder */
+header{
+    grid-column: 1/3;
+    padding: 20px;
+    background-color: var(--main-color);
+    color: white;
+}
+header p{
+    font-size: 24px;
+}
+/* end headder */
+
+/* main section */
+.main{
+    grid-column: 1/2;
+    background: rgb(238, 238, 238);
+    padding: 2rem;
+}
+
+/* description */
+.description p{
+    font-style: italic;
+}
+/* end description */
+
+/* experance */
+#history-info-holder2{
+    display: flex;
+    margin-bottom: 1rem;
+
+}
+#history-info-holder2 #years{
+    margin-right: 5rem;
+    
+}
+
+#history-info-holder2 #job-info h4{
+    margin: 0;
+    margin-bottom: 1rem;
+     
+ }
+ #history-info-holder2 #job-info p{
+    margin: 0;
+     
+ }
+/* end experance */
+/* education */
+#school-info-holder2{
+    display: flex;
+    margin-bottom: 1rem;
+}
+#school-info-holder2 #years{
+    margin-right: 5rem;
+    
+}
+
+#school-info-holder2 #school-info h4{
+    margin: 0;
+    margin-bottom: 1rem;
+     
+ }
+ #school-info-holder2 #school-info p{
+    margin: 0;
+    margin-bottom: 0.5rem;
+     
+ }
+/* end education */
+/* end main section */
+/* side bar */
+.side-bar{
+    padding: 2rem;
+    background-color: rgb(221, 221, 221);;
+
+}
+
+/* img */
+#pdf-img{
+    display: block;
+    width: 100%;
+}
+/* end img */
+/* end side bar */
