@@ -58,7 +58,7 @@ const ExperianceDisplay = (props)=>{
                     <div id='history-info-holder'>
                        <button id ={history.id}onClick={remove}>X</button>
                        <h4>{history.position}</h4>
-                       <p>Copmpany: {history.company} {history.city}</p>
+                       <p>Company: {history.company} {history.city}</p>
                        <p>Location: {history.city}</p>
                        <p><span style={{fontWeight: 'bold'}}>{history.start}-{history.end}</span></p>
 

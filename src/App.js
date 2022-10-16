@@ -3,7 +3,7 @@ import { useReactToPrint } from 'react-to-print';
 import uniqid from 'uniqid';
 import './App.css';
 import { Overview, EducationDisplay, ExperianceDisplay } from './components/Overview';
-import { PDFFormater } from './components/pdfFormatter';
+import { PDFFormater } from './components/pdfFormatter'; 
 
 const personalInfo ={
   first: '',
@@ -111,7 +111,7 @@ const PersonalInfo = (props)=>{
   return(
     <div>
       <h3 id='personal-info-title'>Personal Information</h3>
-      { toggle? <form id='personal-form'>
+      { toggle? <form id='personal-form' data-testid='personal-form'>
       <input type="text" id="first-name" placeholder='First Name' name="first" value={values.first} onChange={handleChange}/>
         <input type="text" id="last-name" placeholder='Last Name' name="last" value={values.last} onChange={handleChange}/>
         <input type="text" id="title" placeholder='Title' name="title" value={values.title} onChange={handleChange}/>
@@ -180,7 +180,7 @@ const Education = (props)=>{
   return(
     <div>
       <h3 id='education-title'>Education</h3>
-      {toggle ? <form id='school-form' onSubmit={handleSubmit}>
+      {toggle ? <form id='school-form' data-testid='school-form' onSubmit={handleSubmit}>
       <input type='text' name='name' placeholder='University Name' id='school-name' value={values.name} onChange={handleChange}/>
           <input type='text' name='city' placeholder='City' id='city' value={values.city} onChange={handleChange}/>
           <input type='text' name='degree' placeholder='Degree' id='degree' value={values.degree} onChange={handleChange}/>
@@ -248,7 +248,7 @@ const Experiance = (props) =>{
   return(
     <div>
       <h3 id='experiance-title'>Experiance</h3>
-      {toggle ? <form id='experiance-form' onSubmit={handleSubmit}>
+      {toggle ? <form id='experiance-form'  data-testid='experiance-form' onSubmit={handleSubmit}>
           <input type='text' name='position' id='position' placeholder='Position' value={values.position} onChange={handleChange} />
           <input type='text' name='company' id='company' placeholder='Company' value={values.company} onChange={handleChange} />
           <input type='text' name='city' id='city' placeholder='City' value={values.city} onChange={handleChange} />
